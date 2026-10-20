@@ -3,34 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="História do Colégio Estadual Antonio de Moraes Barros e de seu patrono, em Londrina/PR." />
+  <meta name="description" content="História do Colégio Estadual Antonio de Moraes Barros, de seu patrono e de sua ligação com Londrina e a República brasileira." />
   <title>Nossa escola tem história — Colégio Estadual Antonio de Moraes Barros</title>
   <style>
     :root{
-      --verde:#1f7a45;--verde2:#e9f5ed;--azul:#14385f;--azul2:#eef5fb;--laranja:#f39a22;--texto:#243447;--cinza:#5b6673;--branco:#fff;
+      --verde:#1f7a45;--verde2:#e9f5ed;--azul:#14385f;--azul2:#eef5fb;--laranja:#f39a22;
+      --texto:#243447;--cinza:#5b6673;--branco:#fff;--borda:#dce7e0;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--texto);background:#f7faf8;line-height:1.65}
-    a{color:var(--azul)}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--texto);background:#f7faf8;line-height:1.68}
+    a{color:var(--azul);font-weight:650}
     .hero{background:linear-gradient(135deg,#f7fff8 0%,#eef7f1 48%,#eef5fb 100%);border-bottom:6px solid var(--verde)}
     .wrap{max-width:1000px;margin:auto;padding:42px 22px}
     .badge{display:inline-block;background:var(--verde);color:#fff;font-weight:800;border-radius:999px;padding:7px 13px;letter-spacing:.03em}
     h1{font-size:clamp(2.3rem,6vw,4.8rem);line-height:.98;margin:.35em 0 .2em;color:var(--azul)}
-    .sub{font-size:1.2rem;max-width:760px;color:#42566c}
+    .sub{font-size:1.18rem;max-width:790px;color:#42566c}
     .orange{color:#d97800}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
-    .card{background:white;border:1px solid #dce7e0;border-radius:18px;padding:22px;box-shadow:0 8px 26px rgba(20,56,95,.06)}
+    .card{background:white;border:1px solid var(--borda);border-radius:18px;padding:22px;box-shadow:0 8px 26px rgba(20,56,95,.06)}
     .card h3{margin-top:0;color:var(--azul)}
     .section{padding:18px 0}
     .section h2{font-size:2rem;color:var(--verde);margin-bottom:.35em}
+    .section h3{color:var(--azul);margin-bottom:.25em}
     .timeline{border-left:4px solid var(--laranja);padding-left:22px;margin:22px 0}
     .timeline p{margin:0 0 20px}
     .quote{background:var(--azul);color:white;border-radius:20px;padding:28px;font-size:1.2rem}
     .callout{background:var(--verde2);border-left:6px solid var(--verde);padding:20px 22px;border-radius:12px;margin:24px 0}
+    .family{background:linear-gradient(135deg,#fff8ee,#fff);border:1px solid #f3d6aa;border-radius:18px;padding:24px;margin:25px 0}
+    .family strong{color:#9a5700}
     .sources{background:#f0f3f5;border-radius:16px;padding:20px}
-    footer{background:#0f2f50;color:#e8f0f8;text-align:center;padding:28px 18px;margin-top:38px}
+    .source-item{margin:0 0 15px}
     .small{font-size:.92rem;color:var(--cinza)}
-    @media(max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:30px 18px}}
+    nav{background:#fff;border-bottom:1px solid #e2e9e5}
+    nav .wrap{padding-top:13px;padding-bottom:13px;display:flex;gap:18px;flex-wrap:wrap}
+    nav a{text-decoration:none;font-size:.95rem}
+    footer{background:#0f2f50;color:#e8f0f8;text-align:center;padding:28px 18px;margin-top:38px}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:30px 18px}nav .wrap{padding-top:12px;padding-bottom:12px}}
   </style>
 </head>
 <body>
@@ -38,39 +47,66 @@
     <div class="wrap">
       <span class="badge">Nossa escola tem história</span>
       <h1>Colégio Estadual <span class="orange">Antonio de Moraes Barros</span></h1>
-      <p class="sub">Uma página especial sobre a história da escola, de seu patrono e da comunidade que ajudou a construir a educação no Jardim Bandeirantes, em Londrina.</p>
+      <p class="sub">Uma página especial sobre a história da escola, de seu patrono e da ligação de seu nome com a formação de Londrina e com um capítulo importante da história política brasileira.</p>
     </div>
   </header>
 
+  <nav>
+    <div class="wrap">
+      <a href="#escola">A escola</a>
+      <a href="#patrono">O patrono</a>
+      <a href="#familia">Família e República</a>
+      <a href="#londrina">Ligação com Londrina</a>
+      <a href="#linha">Linha do tempo</a>
+      <a href="#fontes">Fontes</a>
+    </div>
+  </nav>
+
   <main class="wrap">
-    <section class="section">
+    <section class="section" id="escola">
       <h2>Uma escola construída pela comunidade</h2>
-      <p>No final dos anos 1960, o Jardim Bandeirantes crescia e muitas famílias enfrentavam a falta de uma estrutura educacional próxima para seus filhos. A mobilização da comunidade transformou essa necessidade em projeto coletivo.</p>
-      <p>O colégio foi fundado em <strong>março de 1970</strong>, inicialmente como <strong>Ginásio Estadual Antônio de Moraes Barros</strong>. Com o passar das décadas, ampliou sua estrutura e sua oferta de atividades, consolidando-se como referência educacional da região.</p>
+      <p>No final dos anos 1960, o Jardim Bandeirantes crescia e muitas famílias enfrentavam a falta de uma estrutura educacional próxima para seus filhos. A mobilização dos moradores transformou essa necessidade em um projeto coletivo.</p>
+      <p>O colégio foi fundado em <strong>março de 1970</strong>, inicialmente como <strong>Ginásio Estadual Antônio de Moraes Barros</strong>. Ao longo das décadas seguintes, a instituição passou por ampliações e consolidou sua presença na educação pública da região oeste de Londrina.</p>
 
       <div class="grid">
-        <article class="card"><h3>1970</h3><p>Fundação da escola, fruto da mobilização da comunidade do Jardim Bandeirantes.</p></article>
-        <article class="card"><h3>1979, 1984 e 1989</h3><p>Anos de ampliações importantes da estrutura e da oferta acadêmica.</p></article>
-        <article class="card"><h3>Hoje</h3><p>O Colégio Estadual Antonio de Moraes Barros segue integrando a história da educação pública de Londrina.</p></article>
+        <article class="card"><h3>1970</h3><p>Fundação da escola, resultado da mobilização comunitária do Jardim Bandeirantes.</p></article>
+        <article class="card"><h3>1979, 1984 e 1989</h3><p>Períodos de ampliações importantes da estrutura e da oferta educacional.</p></article>
+        <article class="card"><h3>Hoje</h3><p>O Colégio Estadual Antonio de Moraes Barros permanece integrado à história da educação pública londrinense.</p></article>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="patrono">
       <h2>Quem foi Antonio de Moraes Barros?</h2>
-      <p><strong>Antonio de Moraes Barros</strong> nasceu em 5 de julho de 1870. Formou-se em Direito pela Faculdade de Direito de São Paulo em 1891 e teve atuação política no período da Primeira República.</p>
-      <p>Na década de 1920, foi encarregado de analisar títulos de terras no Paraná em um contexto de conflitos fundiários. Esse trabalho se relacionou ao processo de organização territorial que precedeu a expansão da colonização do Norte do Paraná.</p>
-      <div class="callout">
-        <strong>Ligação com Londrina:</strong> Antonio de Moraes Barros tornou-se o <strong>primeiro diretor-presidente da Companhia de Terras Norte do Paraná (CTNP)</strong>, empresa decisiva no processo de ocupação e formação de Londrina e de outras cidades do Norte do Paraná.
+      <p><strong>Antonio de Moraes Barros</strong> nasceu em 5 de julho de 1870. Formou-se em Direito pela Faculdade de Direito de São Paulo em 1891 e atuou na vida pública paulista durante a Primeira República.</p>
+      <p>Em 1924, foi encarregado de examinar questões relacionadas a títulos de terras no Paraná, em uma região marcada por disputas fundiárias. Segundo a biografia preservada pelo projeto Paraná Histórica, esse trabalho se estendeu por aproximadamente três anos.</p>
+
+      <div class="family" id="familia">
+        <h3>Um parentesco que liga a escola à história da República</h3>
+        <p>Antonio pertencia a uma família de forte presença na política brasileira. Seu pai, <strong>Manoel de Moraes Barros</strong>, participou da fundação do Partido Republicano Paulista e foi senador.</p>
+        <p>O detalhe mais curioso é que <strong>Antonio de Moraes Barros era sobrinho de Prudente José de Moraes Barros — Prudente de Moraes</strong>, presidente da República entre 1894 e 1898. Prudente foi o primeiro civil a ocupar a Presidência da República no período republicano.</p>
+        <p>Assim, o nome que identifica o colégio não está ligado apenas à história regional do Norte do Paraná: ele também pertence a uma família diretamente conectada à formação política da Primeira República brasileira.</p>
       </div>
-      <p>Seu nome foi escolhido como patrono da escola, preservando uma ligação direta entre a memória da instituição e a história regional.</p>
     </section>
 
-    <section class="section">
+    <section class="section" id="londrina">
+      <h2>A ligação com Londrina e o Norte do Paraná</h2>
+      <p>Depois de sua atuação em questões fundiárias, Antonio de Moraes Barros tornou-se o <strong>primeiro diretor-presidente da Companhia de Terras Norte do Paraná (CTNP)</strong>, criada em 1925.</p>
+      <div class="callout">
+        A CTNP foi uma das organizações centrais no processo de colonização planejada do Norte do Paraná. A expansão de suas atividades, das estradas e da ferrovia está diretamente relacionada ao surgimento e ao crescimento de Londrina e de outras cidades da região.
+      </div>
+      <p>Documentação histórica registra Antonio de Moraes Barros na presidência da companhia e sua participação, em 1928, em uma expedição de reconhecimento das terras da CTNP ao lado de nomes como Arthur Thomas e outros técnicos ligados ao empreendimento.</p>
+      <p>É essa ligação com o processo de formação regional que explica a escolha de seu nome como patrono da escola fundada décadas mais tarde no Jardim Bandeirantes.</p>
+    </section>
+
+    <section class="section" id="linha">
       <h2>Linha do tempo</h2>
       <div class="timeline">
         <p><strong>1870</strong> — nascimento de Antonio de Moraes Barros.</p>
         <p><strong>1891</strong> — formação em Direito pela Faculdade de Direito de São Paulo.</p>
-        <p><strong>Década de 1920</strong> — atuação em questões fundiárias no Paraná e posterior liderança na Companhia de Terras Norte do Paraná.</p>
+        <p><strong>1894–1898</strong> — seu tio, Prudente de Moraes, exerce a Presidência da República.</p>
+        <p><strong>1924</strong> — início de sua atuação na análise de questões relacionadas a títulos de terras no Paraná.</p>
+        <p><strong>1925</strong> — criação da Companhia de Terras Norte do Paraná; Antonio aparece como seu primeiro presidente.</p>
+        <p><strong>1928</strong> — participa de expedição de reconhecimento das áreas da companhia no Norte do Paraná.</p>
         <p><strong>1931</strong> — falecimento de Antonio de Moraes Barros, em 2 de agosto.</p>
         <p><strong>1970</strong> — fundação do Ginásio Estadual Antônio de Moraes Barros, em Londrina.</p>
       </div>
@@ -81,14 +117,22 @@
       <p>Durante o ENEM 2026, cada colaborador que trabalha nesta escola passa a fazer parte, ainda que por alguns dias, de uma história iniciada décadas atrás por moradores que acreditaram na força da educação.</p>
     </section>
 
-    <section class="section">
+    <section class="section" id="fontes">
       <h2>Fontes históricas</h2>
       <div class="sources">
-        <p><strong>Londrina Histórica — O Colégio Estadual Antonio de Moraes Barros</strong><br>
+        <p class="source-item"><strong>Londrina Histórica — O Colégio Estadual Antonio de Moraes Barros</strong><br>
         <a href="https://www.londrinahistorica.com.br/publicacoes/383/o-colegio-estadual-antonio-de-moraes-barros" target="_blank" rel="noopener">Consultar a publicação</a></p>
-        <p><strong>Londrina Histórica — Antonio de Moraes Barros</strong><br>
-        <a href="https://www.londrinahistorica.com.br/pioneiros/923/antonio-de-moraes-barros" target="_blank" rel="noopener">Consultar a biografia</a></p>
-        <p class="small">Esta página é uma iniciativa informativa para a equipe de aplicação do ENEM 2026 e não representa uma página oficial do Inep ou do Cebraspe.</p>
+
+        <p class="source-item"><strong>Paraná Histórica — Antonio de Moraes Barros</strong><br>
+        <a href="https://www.paranahistorica.com.br/pioneiros/londrina/923/antonio-de-moraes-barros" target="_blank" rel="noopener">Consultar a biografia</a></p>
+
+        <p class="source-item"><strong>Presidência da República — Biografia de Prudente de Moraes</strong><br>
+        <a href="https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/prudente/biografia-completa" target="_blank" rel="noopener">Consultar a biografia oficial</a></p>
+
+        <p class="source-item"><strong>Senado Federal — referência histórica à Companhia de Terras Norte do Paraná</strong><br>
+        <a href="https://legis.senado.leg.br/diarios/BuscaPaginasDiario?codDiario=16570&download=true" target="_blank" rel="noopener">Consultar documento</a></p>
+
+        <p class="small">Esta página é uma iniciativa informativa para a equipe de aplicação do ENEM 2026 e não representa uma página oficial do Inep, do Cebraspe ou da Secretaria de Estado da Educação.</p>
       </div>
     </section>
   </main>
